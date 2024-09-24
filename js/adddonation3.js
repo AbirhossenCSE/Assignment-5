@@ -5,7 +5,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
     
 
     if (isNaN(donateMoney)) {
-        alert('Failed');
+        alert('Failed! Type Valid Ammount');
         return;
     }
 

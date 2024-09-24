@@ -5,7 +5,7 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
     
 
     if (isNaN(donateMoney)) {
-        alert('Failed');
+        alert('Failed! Type Valid Ammount');
         return;
     }
 
@@ -15,7 +15,7 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
         // main account balance
         const accountBalance = getTextFieldValueById('account-balance');
         if (donateMoney > accountBalance) {
-            alert('No money')
+            alert('You do not have enough balance.')
         }
 
         // add and cashout
