@@ -34,8 +34,13 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
         // add to transaction history
         // 96500 Taka is Donated for famine-2024 at Feni, Bangladesh
         const p = document.createElement('p');
-        p.classList.add('bg-yellow-300');
-        p.innerText = `${donateMoney} Taka is Donated for famine-2024 at Feni, Bangladesh`;
+
+        const currentDate = new Date();
+        const formattedDate = currentDate.toString();
+
+        p.classList.add('bg-gray-100', 'border', 'border-black', 'mx-auto', 'p-4', 'w-9/12', 'rounded');
+        p.innerHTML = `${donateMoney} Taka is Donated for famine-2024 at Noakhali, Bangladesh <br> ${formattedDate}`;
+
         // should be a common function
         document.getElementById('history-section').appendChild(p);
         

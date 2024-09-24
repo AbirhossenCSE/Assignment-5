@@ -2,6 +2,7 @@
 document.getElementById('btn-show-donation').addEventListener('click', function(){
     shoeSectionById('donation-section')
     
+    
 })
 
 // History button
