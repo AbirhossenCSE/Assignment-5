@@ -39,7 +39,7 @@ document.getElementById('btn-donate-2').addEventListener('click', function(event
         const formattedDate = currentDate.toString();
 
         p.classList.add('bg-gray-100', 'border', 'border-black', 'mx-auto', 'p-4', 'w-9/12', 'rounded');
-        p.innerHTML = `${donateMoney} Taka is Donated for famine-2024 at Noakhali, Bangladesh <br> ${formattedDate}`;
+        p.innerHTML = `<strong>${donateMoney} Taka is Donated for famine-2024 at Feni, Bangladesh</strong><br><span class="text-sm">${formattedDate}</span>`;
 
         // should be a common function
         document.getElementById('history-section').appendChild(p);
