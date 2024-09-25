@@ -24,7 +24,7 @@ document.getElementById('btn-donate-3').addEventListener('click', function(event
         const accountNewBalance = accountBalance - donateMoney;
 
         // donation balance
-        document.getElementById('donation-balance-2').innerText = donateNewBalance;
+        document.getElementById('donation-balance-3').innerText = donateNewBalance;
         // main balance
         document.getElementById('account-balance').innerText = accountNewBalance;
 
