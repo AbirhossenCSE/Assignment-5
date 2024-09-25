@@ -16,6 +16,7 @@ document.getElementById('btn-donate').addEventListener('click', function(event){
         const accountBalance = getTextFieldValueById('account-balance');
         if (donateMoney > accountBalance) {
             alert('You do not have enough balance.')
+            return;
         }
 
         // add and cashout
